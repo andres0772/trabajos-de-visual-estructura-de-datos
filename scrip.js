@@ -1,3 +1,5 @@
+//primera actividad
+console.log("actividad 1 anterior ")
 var num2 = 55
 var num1 = 1
 suma = num2 + num1
@@ -15,6 +17,5 @@ var minutos = 45
 horas = minutos / 60
 console.log("se paso  " + minutos + " minutos a horas, daria un total de "+  horas + " horas " )
 
-// segunda actividad 
 
 
