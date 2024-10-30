@@ -13,4 +13,8 @@ else if (resultado <= 15)
 
 var minutos = 45
 horas = minutos / 60
-console.log("son " + horas +" horas" )
+console.log("se paso  " + minutos + " minutos a horas, daria un total de "+  horas + " horas " )
+
+// segunda actividad 
+
+
