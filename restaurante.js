@@ -5,10 +5,10 @@ class Restaurante {
     }
 
     hashFunction(mesa) {
-        return mesa % this.size;
+        return mesa % this.size; //calcula el indice dependiendo del tamaño de la tabla
     }
 
-    rehash() {
+    rehash() { //aumenta el tamaño de la tabla cuando este por llenarse
         let newSize = this.size * 2; 
         let newTable = new Array(newSize);
 
@@ -103,18 +103,21 @@ restaurante.reservar(3, "Ana");
 restaurante.reservar(4, "andres");
 
 // Buscar reserva
-console.log("---------------")
-console.log(restaurante.buscar(5)); 
+console.log("----busca de reservas------")
+console.log(restaurante.buscar(1)); 
 
 // Mostrar reservas
-console.log("----------------------")
+console.log("---------reservas actuales--------")
 restaurante.mostrarReservas();
 
 // Eliminar reserva
-console.log("----------------------")
+console.log("------reservas eliminadas---------")
 restaurante.eliminarReserva(1);
 restaurante.eliminarReserva(1);
-
+restaurante.eliminarReserva(5);
 // Mostrar reservas después de eliminar
-console.log("----------------------")
-restaurante.mostrarReservas();
+console.log("------reservas actuales----------")
+
+restaurante.mostrarReservas(); 
+console.log("------reservas nuevas----------")
+restaurante.reservar(1, "Pedro");
